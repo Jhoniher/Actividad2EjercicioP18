@@ -8,6 +8,7 @@ public class EjercicioPropuesto18 {
         double horas_trabajadas, valor_hora, porcentaje_retencion;
         System.out.println("Ingrese el codigo del empleado: ");
         codigo_empleado=entrada.nextInt();
+        entrada.nextLine(); //Comando para borrar el buffer;
         System.out.println("Ingrese el nombre del empleado: ");
         nombre=entrada.nextLine();
         System.out.println("Ingrese las horas trabajadas por el empleado en el mes: ");
@@ -19,6 +20,10 @@ public class EjercicioPropuesto18 {
         double salario_bruto=horas_trabajadas*valor_hora;
         double retencion=salario_bruto*(porcentaje_retencion/100);
         double salario_neto=salario_bruto-retencion;
+        System.out.println("El codigo del empleado es: "+codigo_empleado);
+        System.out.println("El nombre del empleado es: "+nombre);
+        System.out.println("El salario bruto del empleado es: "+salario_bruto);
+        System.out.println("El salario neto del empleado es: "+salario_neto);
 
 
     }
